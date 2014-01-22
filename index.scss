@@ -1,0 +1,108 @@
+
+@-webkit-keyframes ani-fade-in
+{
+    0% {opacity: 0}    
+    100% {opacity: 1}
+}
+
+@-moz-keyframes ani-fade-in
+{
+     0% {opacity: 0}    
+    100% {opacity: 1}
+}
+
+@keyframes ani-fade-in
+{
+     0% {opacity: 0}    
+    100% {opacity: 1}
+}
+
+
+
+
+
+.max-width-page {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+
+.landing-block-1 {
+  z-index: 10;
+  background-color: #7f87ff;
+  background: linear-gradient(to bottom, #7f87ff 0%, #bb97c8 100%);
+}
+
+.no-cssanimations .landing-block-1 {
+  height: 800px;
+}
+
+
+.landing-block-1--title-1 {
+  font-size: 60px;
+  line-height: 72px;
+  font-weight: 100;
+  position: relative;
+  top: 20%;
+  opacity: 0; 
+  animation: ani-fade-in 2s linear 0.2s 1; 
+  animation-fill-mode: forwards
+}
+
+.landing-block-1--title-2 {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 200;
+  position: relative;
+  top: 25%;
+  opacity: 0;
+  animation: ani-fade-in 2s linear 1.5s 1; 
+  animation-fill-mode: forwards
+}
+
+//opcacity fix for browsers without animation (IE9 and less)
+.no-cssanimations .landing-block-1--title-1,
+.no-cssanimations .landing-block-1--title-2 {
+  opacity: 1;
+}
+
+.landing-block-2 {
+  background-color: #32323c;
+}
+
+.cssanimations .landing-block-2 {
+  top: 75%;
+  z-index: 15;
+  height: 17%;
+}
+
+.no-cssanimations .landing-block-2 {
+  margin-top: -100px;
+  height: 150px;
+}
+
+
+.landing-block-3 {
+  top: 190%;
+  z-index: 20;
+  background-color: #bbb;
+}
+
+.landing-callout-1 {
+  width: 157px;
+  margin: -90px auto 0 auto;
+  height: 163px;
+}
+
+.no-cssanimations .landing-callout-1 {
+  position:relative;
+  top: -90px;
+}
+
+/*
+no-cssanimations
+no-cssgradients
+no-csstransitions
+ */
+
+

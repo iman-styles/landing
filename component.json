@@ -1,0 +1,11 @@
+{
+  "name": "landing",
+  "main": "index.scss",
+  "version": "0.0.1",
+  "dependencies": {},
+  "styles": [
+    "index.scss"
+  ],
+  "files": [],
+  "repo": "https://raw.github.com/iman-styles/landing"
+}
